@@ -1,0 +1,13 @@
+<div class="loader-section" *ngIf="displayLoader" >
+    <span class="loader"></span>
+    <p>Calculating your CNY greeting skills score...</p>
+</div>
+
+<div *ngIf="!displayLoader" class="score-section">
+    <h2 class="score-title">Your CNY Greeting Skills Score</h2>
+    <p class="score-text">You scored <span class="score-number">{{ scorePercentage }}%</span></p>
+    <p class="score-message">{{ message }}</p>
+
+    <button class="action-button" (click)="resetPage.emit()">Try again ↩️</button>
+</div>
+

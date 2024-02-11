@@ -1,0 +1,9 @@
+.result-text {
+    font-size: 20px;
+    color: #000;
+    margin: 20px 0;
+    text-align: center;
+    background-color: color-mix(in srgb, yellow 20%, transparent);
+    padding: 10px 20px;
+    border-radius: 5px;
+}

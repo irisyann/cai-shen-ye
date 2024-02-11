@@ -1,0 +1,72 @@
+.text {
+    font-size: 20px;
+    color: #000;
+    margin: 20px auto;
+    text-align: center;
+    max-width: 500px;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option-button {
+    --pill-accent: var(--button-accent);
+    background: color-mix(in srgb, var(--button-accent) 5%, transparent);
+    color: var(--button-accent);
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 2.75rem;
+    border: 1px solid var(--button-accent);
+    transition: background 0.3s ease;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.4rem;
+    letter-spacing: -0.00875rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.option-button:hover {
+    background: color-mix(in srgb, var(--button-accent) 20%, transparent);
+}
+
+.options .option-button:nth-child(6n + 1) {
+    --button-accent: var(--hot-red);
+}
+
+.options .option-button:nth-child(6n + 2) {
+    --button-accent: var(--french-violet);
+}
+
+.options .option-button:nth-child(6n + 3) {
+    --button-accent: var(--vivid-pink);
+}
+
+.options .option-button:nth-child(6n + 4) {
+    --button-accent: var(--bright-blue);
+}
+
+.option-text {
+    display: block;
+}
+
+.option-text-translation {
+    display: block;
+    font-size: 10px;
+    font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+    .options {
+        flex-direction: column;
+    }
+
+    .option-button {
+        max-width: fit-content;
+        margin: 10px;
+    }
+}

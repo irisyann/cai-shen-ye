@@ -1,0 +1,14 @@
+<p class="text">
+    {{ dialog?.text }}
+</p>
+
+<div *ngIf="dialog?.options" class="options">
+    <button class="option-button" *ngFor="let option of dialog?.options" (click)="optionSelect.emit(option)">
+        <span class="option-text">
+            {{ option?.text }}
+        </span>
+        <span *ngIf="showTextTranslation" class="option-text-translation">
+            {{ option?.textTranslation }}
+        </span>
+    </button>
+</div>
