@@ -25,22 +25,17 @@ p {
 
 main {
     width: 100%;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem;
     box-sizing: inherit;
     position: relative;
-    background-color: rgb(246, 246, 246);
 }
 
-.pill-group {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    flex-wrap: wrap;
-    gap: 1.25rem;
+footer {    
+    position: absolute;
+    bottom: 0;
 }
 
 .gow-img {
