@@ -39,7 +39,7 @@ export const dialogs = [
   },
   {
     page: 2,
-    text: "Haiya you dunno chinese ah, then learn lo 🙄 Ok la I put translation for you on each chinese phrase. You ready now?",
+    text: "Ok la I put english translation for you on each chinese phrase. You ready now?",
     options: [
       {
         text: "Ok let's go!",
@@ -127,7 +127,7 @@ export const dialogs = [
       {
         text: "财源滚滚!",
         textTranslation: "Rolling in wealth!",
-        result: "Uncle: \"Cheh you only see me for my money is it 😤\"",
+        result: "Uncle: \"Cheh you only see me for my money is it 🙄😤\"",
         points: 0,
         nextPage: 6,
       },
