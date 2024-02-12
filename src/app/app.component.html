@@ -1,20 +1,22 @@
-<main class="main">
-  <img src="./assets/caishenye.jpg" class="gow-img" alt="God of wealth (财神爷)">
-  <div>
-    <app-dialog *ngIf="!resultPage && !scorePage" [dialog]="currentDialog" [page]="page" [showTextTranslation]="showTextTranslation" (optionSelect)="onOptionSelect($event)"></app-dialog>
-    <div *ngIf="resultPage" class="result-section">
-      <app-result-alert [result]="optionResult"></app-result-alert>
-      <button class="action-button" (click)="goToNextPage()">Next ➡️</button>
+<div class="app">
+  <main class="main">
+    <img src="./assets/caishenye.jpg" class="gow-img" alt="God of wealth (财神爷)">
+    <div>
+      <app-dialog *ngIf="!resultPage && !scorePage" [dialog]="currentDialog" [page]="page" [showTextTranslation]="showTextTranslation" (optionSelect)="onOptionSelect($event)"></app-dialog>
+      <div *ngIf="resultPage" class="result-section">
+        <app-result-alert [result]="optionResult"></app-result-alert>
+        <button class="action-button" (click)="goToNextPage()">Next ➡️</button>
+      </div>
+      <app-score *ngIf="scorePage" [points]="points" (resetPage)="onResetPage()"></app-score>
     </div>
-    <app-score *ngIf="scorePage" [points]="points" (resetPage)="onResetPage()"></app-score>
-  </div>
-</main>
-<footer>
-  <a href="https://github.com/irisyann/cai-shen-ye" target="_blank" style="display: flex; align-items: center; margin: 5px;">
-      <img src="./assets/github.svg" width="30" height="30" alt="">
-      <span style="text-decoration: none; font-size: 10px; margin-left: 5px;">&#64;irisyann</span>
-  </a>
-</footer>
+  </main>
+  <footer>
+    <a href="https://github.com/irisyann/cai-shen-ye" target="_blank" style="display: flex; align-items: center; margin: 5px;">
+        <img src="./assets/github.svg" width="25" height="25" alt="">
+        <span style="text-decoration: none; font-size: 12px; margin-left: 5px;">&#64;irisyann</span>
+    </a>
+  </footer>
+</div>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
