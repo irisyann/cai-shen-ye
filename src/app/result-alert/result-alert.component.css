@@ -6,4 +6,5 @@
     background-color: color-mix(in srgb, yellow 20%, transparent);
     padding: 10px 20px;
     border-radius: 5px;
+    max-width: 500px;
 }

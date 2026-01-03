@@ -15,7 +15,7 @@ export interface DialogOption {
 export const dialogs = [
   {
     page: 0,
-    text: "🏮 Happy Chinese New Year! My name is Cai Shen Ye.",
+    text: "🏮 Happy Chinese New Year! I am Cai Shen Ye.",
     options: [
       {
         text: "👋 Hello Cai Shen Ye!",
@@ -25,7 +25,7 @@ export const dialogs = [
   },
   {
     page: 1,
-    text: "I am here to help you train your CNY greeting skills to impress all your aunty uncle. 🪭",
+    text: "I'm here to train your CNY greeting skills to impress your aunty uncle for ANGPAOMAXXING🧧🧧🧧",
     options: [
       {
         text: "I am ready! 😎",
@@ -39,7 +39,7 @@ export const dialogs = [
   },
   {
     page: 2,
-    text: "Ok la I put english translation for you on each chinese phrase. You ready now?",
+    text: "Sounds like skill issue but I'm nice so I'll put english translations. You ready now?",
     options: [
       {
         text: "Ok let's go!",
@@ -66,15 +66,15 @@ export const dialogs = [
         nextPage: 4,
       },
       {
-        text: "容（龙）光焕发!",
+        text: "容光焕发!",
         textTranslation: "Glow with radiance!",
-        result: "Aunty: \"🥰 Wah you very sweet hor, come I give you extra angbao 🧧\"",
+        result: "Aunty: \"🥰 Wah you very sweet hor, come I give you extra angpao 🧧\"",
         points: 2,
         nextPage: 4,
       },
       {
         text: "Nothing",
-        result: "Aunty: \"Haiyo so rude, never wish me one. No angbao for you 😡\"",
+        result: "Aunty: \"Haiyo so rude, never wish me one. No angpao for you 😡\"",
         points: 0,
         nextPage: 4,
       },
@@ -134,18 +134,118 @@ export const dialogs = [
       {
         text: "身体健康!",
         textTranslation: "Good health!",
-        result: "Uncle: \"🥹 Wah... you are the only one who cares about my health. Lai uncle you a big angbao 🧧\"",
+        result: "Uncle: \"🥹 Wah... you are the only one who cares about my health. Lai uncle give you BIG angpao 🧧\"",
         points: 2,
         nextPage: 6,
       },
       {
         text: "Nothing",
-        result: "Uncle: \"Haiyo so rude, never wish me one. No angbao for you 😡\"",
+        result: "Uncle: \"Haiyo so rude, never wish me one. No angpao for you 😡\"",
         points: 0,
         nextPage: 6,
       },
     ]
   },
+  {
+    "page": 6,
+    "text": "🚨 EMERGENCY! The Nosy Aunty™️ corners you. She asks: 'Dating already or not? When getting married?' How do you distract her?!?!",
+    "options": [
+      {
+        "text": "心想事成!",
+        "textTranslation": "May all your wishes come true!",
+        "result": "Aunty: \"My wish is for you to get married leh. So you agreeing is it? 😏\"",
+        "points": 1,
+        "nextPage": 7
+      },
+      {
+        "text": "早生贵子!",
+        "textTranslation": "Have a baby soon!",
+        "result": "Aunty: \"CHOI! You crazy ah, I menopause long time ago already lor 🤬\"",
+        "points": 0,
+        "nextPage": 7
+      },
+      {
+        "text": "青春永驻!",
+        "textTranslation": "Stay young forever!",
+        "result": "Aunty: \"Aiyo, where got young... but I did use new facial cream today. Hehe you so sweet one! 🥰 (She forgets to ask about your partner)\"",
+        "points": 2,
+        "nextPage": 7
+      },
+      {
+        "text": "Nothing",
+        "result": "You pretend to choke on a pineapple tart. Aunty pats your back but continues asking 😵",
+        "points": 0,
+        "nextPage": 7
+      }
+    ]
+  },
+  {
+    "page": 7,
+    "text": "Your annoying cousin who just came back from overseas and studies Engineering is flexing his grades. What do you say to shut him up politely?",
+    "options": [
+      {
+        "text": "学业进步!",
+        "textTranslation": "Academic progress!",
+        "result": "Cousin: \"Bro I already Dean's list every semester. How much more progress you want 🙄\"",
+        "points": 0,
+        "nextPage": 8
+      },
+      {
+        "text": "步步高升!",
+        "textTranslation": "Rise step by step!",
+        "result": "Cousin: \"Thanks bro. Maybe one day you can be on my level also 😏\"",
+        "points": 1,
+        "nextPage": 8
+      },
+      {
+        "text": "前程似锦!",
+        "textTranslation": "Wishing you a bright future!",
+        "result": "Cousin: \"Wah I didn't know your Chinese standard so high one. Finally, someone on my intellectual level. 🍷\"",
+        "points": 2,
+        "nextPage": 8
+      },
+      {
+        "text": "恭喜发财!",
+        "textTranslation": "Get Rich!",
+        "result": "Cousin: \"So basic bro. That's for ordinary people 🥱\"",
+        "points": 0,
+        "nextPage": 8
+      }
+    ]
+  },
+  {
+    "page": 8,
+    "text": "Finally you approach your 90-year-old Popo. This is the final boss. Choose carefully.",
+    "options": [
+      {
+        text: "步步高升!",
+        textTranslation: "Rise higher step by step!",
+        result: "Grandma: \"Rise go where? Heaven is it? 💀\"",
+        points: 0,
+        nextPage: 9,
+      },
+      {
+        "text": "寿比南山!",
+        "textTranslation": "Longevity as high as the Southern Mountain!",
+        "result": "Grandma: \"So pandai ah you. Lai take this extra thick angpao 🧧\"",
+        "points": 2,
+        "nextPage": 9
+      },
+      {
+        "text": "笑口常开!",
+        "textTranslation": "Smile always!",
+        "result": "Grandma: \"I no teeth how to smile? You make fun of me ah? 😬\"",
+        "points": 1,
+        "nextPage": 9
+      },
+      {
+        "text": "Nothing",
+        "result": "Grandma: \"You forgot who I am is it? Why so quiet? 😢\"",
+        "points": 0,
+        "nextPage": 9
+      }
+    ]
+  }
 ];
 
 

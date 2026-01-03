@@ -8,7 +8,7 @@ import { DialogOption, dialogs } from './dialogs';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  FINAL_PAGE = 6;
+  FINAL_PAGE = 9;
   dialogs = [...dialogs];
   showTextTranslation = false;
   points = 0;
