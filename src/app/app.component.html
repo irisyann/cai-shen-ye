@@ -12,27 +12,23 @@
     <div>
       <app-dialog *ngIf="!resultPage && !scorePage" [dialog]="currentDialog" [page]="page" [showTextTranslation]="showTextTranslation" (optionSelect)="onOptionSelect($event)"></app-dialog>
       <div *ngIf="resultPage" class="result-section">
-        <app-result-alert [result]="optionResult" [roundMoney]="roundMoney"></app-result-alert>
+        <app-result-alert [result]="optionResult" [resultTranslation]="optionResultTranslation" [roundMoney]="roundMoney" [showTextTranslation]="showTextTranslation"></app-result-alert>
         <button class="action-button" (click)="goToNextPage()">Next ➡️</button>
       </div>
       <app-score *ngIf="scorePage" [totalMoney]="totalMoney" (resetPage)="onResetPage()"></app-score>
     </div>
   </main>
-  <footer>
-    <a href="https://github.com/irisyann/cai-shen-ye" target="_blank" style="display: flex; align-items: center; margin: 5px;">
-        <img src="./assets/github.svg" width="25" height="25" alt="">
-        <span style="text-decoration: none; font-size: 12px; margin-left: 5px;">&#64;irisyann</span>
-    </a>
+  <footer style="display: flex; align-items: center; gap: 15px;">
+    <div style="display: flex; align-items: center">
+      <a href="https://github.com/irisyann/cai-shen-ye" target="_blank" style="display: flex; align-items: center; margin: 5px;">
+          <img src="./assets/github.svg" width="25" height="25" alt="">
+          <span style="text-decoration: none; margin-left: 5px;">&#64;irisyann</span>
+      </a>
+      <span>wishes you gxfc.</span>
+    </div>
+
+    <a href="https://ko-fi.com/irisyann" target="_blank" class="kofi-button">give me angpao too 🧧👉🏽👈🏽</a>
   </footer>
 </div>
-
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
 
 <router-outlet></router-outlet>

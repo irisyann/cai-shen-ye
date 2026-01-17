@@ -14,6 +14,7 @@ export class AppComponent {
   totalMoney = 0;
   roundMoney = 0;
   optionResult = '';
+  optionResultTranslation = '';
   resultPage = false;
   scorePage = false; /// change
 
@@ -37,6 +38,7 @@ export class AppComponent {
       this.totalMoney += this.roundMoney;
       this.resultPage = true;
       this.optionResult = option.result || '';
+      this.optionResultTranslation = option.resultTranslation || '';
     } else {
       this.resultPage = false;
     }
@@ -49,6 +51,7 @@ export class AppComponent {
     this.totalMoney = 0;
     this.roundMoney = 0;
     this.page = 0;
+    this.showTextTranslation = false;
     this.currentDialog = this.dialogs.find(dialog => dialog.page === this.page);
     this.resultPage = false;
     this.scorePage = false;

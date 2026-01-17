@@ -12,6 +12,19 @@
     line-height: 1.5;
 }
 
+.result-text-translation {
+    font-size: 14px;
+    color: #daa520;
+    margin: -10px 0 20px 0;
+    text-align: center;
+    padding: 12px 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    line-height: 1.4;
+    font-style: italic;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
 /* Angpao container */
 .angpao-container {
     position: relative;

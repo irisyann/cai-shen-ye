@@ -7,5 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class ResultAlertComponent {
   @Input() result: string | undefined;
+  @Input() resultTranslation: string | undefined;
   @Input() roundMoney: number = 0;
+  @Input() showTextTranslation: boolean = false;
 }

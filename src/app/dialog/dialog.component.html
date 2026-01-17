@@ -1,6 +1,15 @@
 <p class="text">
     {{ dialog?.text }}
 </p>
+<p *ngIf="showTextTranslation && dialog?.textTranslation" class="text-translation">
+    {{ dialog?.textTranslation }}
+</p>
+
+<div *ngIf="dialog?.extraText" class="extra-text">
+    {{ dialog?.extraText }}
+</div>
+
+<video *ngIf="dialog?.video" [src]="dialog?.video" class="dialog-video" autoplay playsinline loop controls></video>
 
 <div *ngIf="dialog?.options" class="options">
     <button class="option-button" *ngFor="let option of dialog?.options" (click)="optionSelect.emit(option)">
@@ -12,3 +21,5 @@
         </span>
     </button>
 </div>
+
+<div *ngIf="dialog?.video" style="margin-bottom: 50px;"></div>

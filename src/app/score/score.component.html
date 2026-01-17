@@ -7,9 +7,11 @@
 <div *ngIf="!displayLoader" class="score-section">
     <h2 class="score-title">Your CNY Angpao Haul</h2>
     <p class="score-text">You earned <span class="score-number">${{ totalMoney }}</span></p>
-    <p class="score-max">(You could have gotten ${{ maxMoney }} tho)</p>
+    <p class="score-max" *ngIf="!isPerfectScore">(You could have gotten ${{ maxMoney }} tho)</p>
     <p class="score-message">{{ message }}</p>
 
-    <button class="action-button" (click)="resetPage.emit()">I can do better ↩️</button>
+    <button class="action-button" (click)="resetPage.emit()">
+        {{ isPerfectScore ? "You're too OP, replay?" : "I can do better ↩️" }}
+    </button>
 </div>
 

@@ -63,6 +63,7 @@ main {
 footer {
     position: absolute;
     bottom: 0;
+    font-size: 12px;
 }
 
 footer a {

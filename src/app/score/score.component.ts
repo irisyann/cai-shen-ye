@@ -13,6 +13,7 @@ export class ScoreComponent implements OnInit{
   message = '';
   maxMoney = 0;
   displayLoader = true;
+  isPerfectScore = false;
 
   ngOnInit() {
     setTimeout(() => {
@@ -28,8 +29,11 @@ export class ScoreComponent implements OnInit{
 
     // Messages based on performance
     const percentage = this.maxMoney > 0 ? (this.totalMoney / this.maxMoney) * 100 : 0;
+    this.isPerfectScore = this.totalMoney >= this.maxMoney;
 
-    if (percentage >= 80) {
+    if (this.isPerfectScore) {
+      this.message = `PEAK 👏 BEHAVIOUR 👏 99.999% Chinese DNA verified 🏅`;
+    } else if (percentage >= 80) {
       this.message = `PEAK 👏 BEHAVIOUR 👏 99.999% Chinese DNA verified 🏅`;
     } else if (percentage >= 60) {
       this.message = `IMPRESSIVE! Your aunties and uncles wish their children are more like you 🫵🏽`;

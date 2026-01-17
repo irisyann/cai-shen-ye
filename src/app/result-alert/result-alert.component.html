@@ -1,4 +1,5 @@
 <p class="result-text">{{ result }}</p>
+<p *ngIf="showTextTranslation && resultTranslation" class="result-text-translation">{{ resultTranslation }}</p>
 
 <div class="angpao-container">
     <div class="bills-container" *ngIf="roundMoney > 0">
