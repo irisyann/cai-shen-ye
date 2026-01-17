@@ -7,6 +7,20 @@
     </div>
   </div>
 
+  <div class="creds">
+    <div style="display: flex; align-items: center">
+      <a href="https://github.com/irisyann/cai-shen-ye" target="_blank" style="display: flex; align-items: center; margin: 5px;">
+          <img src="./assets/github.svg" width="15" height="15" alt="">
+          <span style="text-decoration: none; margin-left: 5px;">&#64;irisyann</span>
+      </a>
+      <span>wishes you gxfc :D</span>
+    </div>
+
+    <div>
+      <a href="https://ko-fi.com/irisyann" target="_blank" class="kofi-button">give me angpao too 🧧👉🏽👈🏽</a>
+    </div>
+  </div>
+  
   <main class="main">
     <img src="./assets/caishenye.jpg" class="gow-img" alt="God of wealth (财神爷)">
     <div>
@@ -18,17 +32,6 @@
       <app-score *ngIf="scorePage" [totalMoney]="totalMoney" (resetPage)="onResetPage()"></app-score>
     </div>
   </main>
-  <footer style="display: flex; align-items: center; gap: 15px;">
-    <div style="display: flex; align-items: center">
-      <a href="https://github.com/irisyann/cai-shen-ye" target="_blank" style="display: flex; align-items: center; margin: 5px;">
-          <img src="./assets/github.svg" width="25" height="25" alt="">
-          <span style="text-decoration: none; margin-left: 5px;">&#64;irisyann</span>
-      </a>
-      <span>wishes you gxfc.</span>
-    </div>
-
-    <a href="https://ko-fi.com/irisyann" target="_blank" class="kofi-button">give me angpao too 🧧👉🏽👈🏽</a>
-  </footer>
 </div>
 
 <router-outlet></router-outlet>

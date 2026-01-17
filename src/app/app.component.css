@@ -60,22 +60,25 @@ main {
     position: relative;
 }
 
-footer {
-    position: absolute;
-    bottom: 0;
+.creds {
+    position: fixed;
+    top: 2;
     font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
 }
 
-footer a {
+.creds a {
     color: var(--text-muted);
     transition: color 0.3s ease;
 }
 
-footer a:hover {
+.creds a:hover {
     color: var(--gold-primary);
 }
 
-footer span {
+.creds span {
     color: var(--text-muted) !important;
 }
 
