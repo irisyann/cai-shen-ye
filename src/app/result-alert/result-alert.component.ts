@@ -7,4 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class ResultAlertComponent {
   @Input() result: string | undefined;
+  @Input() roundMoney: number = 0;
+  @Input() totalMoney: number = 0;
 }

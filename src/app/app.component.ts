@@ -11,11 +11,12 @@ export class AppComponent {
   FINAL_PAGE = 9;
   dialogs = [...dialogs];
   showTextTranslation = false;
-  points = 0;
+  totalMoney = 0;
+  roundMoney = 0;
   optionResult = '';
   resultPage = false;
   scorePage = false; /// change
- 
+
   page = 0; /// change
   currentDialog = this.dialogs.find(dialog => dialog.page === this.page);
 
@@ -32,7 +33,8 @@ export class AppComponent {
     }
 
     if (option.result) {
-      this.points += option.points || 0;
+      this.roundMoney = option.money || 0;
+      this.totalMoney += this.roundMoney;
       this.resultPage = true;
       this.optionResult = option.result || '';
     } else {
@@ -44,7 +46,8 @@ export class AppComponent {
   }
 
   onResetPage(): void {
-    this.points = 0;
+    this.totalMoney = 0;
+    this.roundMoney = 0;
     this.page = 0;
     this.currentDialog = this.dialogs.find(dialog => dialog.page === this.page);
     this.resultPage = false;

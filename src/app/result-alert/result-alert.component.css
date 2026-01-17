@@ -8,3 +8,15 @@
     border-radius: 5px;
     max-width: 500px;
 }
+
+.money-earned, .money-total {
+    font-size: 18px;
+    color: #000;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.money-amount {
+    font-weight: bold;
+    color: #d4af37;
+}

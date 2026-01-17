@@ -8,7 +8,7 @@ export interface DialogOption {
   text: string;
   textTranslation?: string;
   result?: string;
-  points?: number;
+  money?: number;
   nextPage: number;
 }
 
@@ -55,27 +55,27 @@ export const dialogs = [
         text: "新年快乐!",
         textTranslation: "Happy New Year!",
         result: "Aunty: \"Haiya this greeting too generic, aunty hear so many times already sien 😴\"",
-        points: 1,
+        money: 50,
         nextPage: 4,
       },
       {
         text: "快高长大!",
         textTranslation: "Grow taller and bigger!",
         result: "Aunty: \"Har?? You mean I am short and small la😡\"",
-        points: 0,
+        money: 0,
         nextPage: 4,
       },
       {
         text: "容光焕发!",
         textTranslation: "Glow with radiance!",
         result: "Aunty: \"🥰 Wah you very sweet hor, come I give you extra angpao 🧧\"",
-        points: 2,
+        money: 200,
         nextPage: 4,
       },
       {
         text: "Nothing",
         result: "Aunty: \"Haiyo so rude, never wish me one. No angpao for you 😡\"",
-        points: 0,
+        money: 0,
         nextPage: 4,
       },
     ]
@@ -88,27 +88,27 @@ export const dialogs = [
         text: "快高长大!",
         textTranslation: "Grow taller and bigger!",
         result: "This makes sense but he can't understand you. He's just a baby 😐",
-        points: 1,
+        money: 50,
         nextPage: 5,
       },
       {
         text: "四季平安!",
         textTranslation: "Peace all year round!",
         result: "The baby has no idea what you're saying, he just wants to eat and sleep 😴",
-        points: 0,
+        money: 0,
         nextPage: 5,
       },
       {
         text: "笑口常开!",
         textTranslation: "Smile always!",
         result: "The baby has no idea what you're saying, he just wants to eat and sleep 😴",
-        points: 0,
+        money: 0,
         nextPage: 5,
       },
       {
         text: "Nothing",
         result: "Good, because the baby is too young to understand anyway 😬",
-        points: 2,
+        money: 200,
         nextPage: 5,
       },
     ]
@@ -121,27 +121,27 @@ export const dialogs = [
         text: "生意兴隆!",
         textTranslation: "Prosper in business!",
         result: "Uncle: \"Haiya hear this so many times already, why you so boring one 🥱\"",
-        points: 1,
+        money: 50,
         nextPage: 6,
       },
       {
         text: "财源滚滚!",
         textTranslation: "Rolling in wealth!",
         result: "Uncle: \"Cheh you only see me for my money is it 🙄😤\"",
-        points: 0,
+        money: 0,
         nextPage: 6,
       },
       {
         text: "身体健康!",
         textTranslation: "Good health!",
         result: "Uncle: \"🥹 Wah... you are the only one who cares about my health. Lai uncle give you BIG angpao 🧧\"",
-        points: 2,
+        money: 200,
         nextPage: 6,
       },
       {
         text: "Nothing",
         result: "Uncle: \"Haiyo so rude, never wish me one. No angpao for you 😡\"",
-        points: 0,
+        money: 0,
         nextPage: 6,
       },
     ]
@@ -154,27 +154,27 @@ export const dialogs = [
         "text": "心想事成!",
         "textTranslation": "May all your wishes come true!",
         "result": "Aunty: \"My wish is for you to get married leh. So you agreeing is it? 😏\"",
-        "points": 1,
+        "money": 50,
         "nextPage": 7
       },
       {
         "text": "早生贵子!",
         "textTranslation": "Have a baby soon!",
         "result": "Aunty: \"CHOI! You crazy ah, I menopause long time ago already lor 🤬\"",
-        "points": 0,
+        "money": 0,
         "nextPage": 7
       },
       {
         "text": "青春永驻!",
         "textTranslation": "Stay young forever!",
         "result": "Aunty: \"Aiyo, where got young... but I did use new facial cream today. Hehe you so sweet one! 🥰 (She forgets to ask about your partner)\"",
-        "points": 2,
+        "money": 200,
         "nextPage": 7
       },
       {
         "text": "Nothing",
         "result": "You pretend to choke on a pineapple tart. Aunty pats your back but continues asking 😵",
-        "points": 0,
+        "money": 0,
         "nextPage": 7
       }
     ]
@@ -187,28 +187,28 @@ export const dialogs = [
         "text": "学业进步!",
         "textTranslation": "Academic progress!",
         "result": "Cousin: \"Bro I already Dean's list every semester. How much more progress you want 🙄\"",
-        "points": 0,
+        "money": 0,
         "nextPage": 8
       },
       {
         "text": "步步高升!",
         "textTranslation": "Rise step by step!",
         "result": "Cousin: \"Thanks bro. Maybe one day you can be on my level also 😏\"",
-        "points": 1,
+        "money": 50,
         "nextPage": 8
       },
       {
         "text": "前程似锦!",
         "textTranslation": "Wishing you a bright future!",
         "result": "Cousin: \"Wah I didn't know your Chinese standard so high one. Finally, someone on my intellectual level. 🍷\"",
-        "points": 2,
+        "money": 200,
         "nextPage": 8
       },
       {
         "text": "恭喜发财!",
         "textTranslation": "Get Rich!",
         "result": "Cousin: \"So basic bro. That's for ordinary people 🥱\"",
-        "points": 0,
+        "money": 0,
         "nextPage": 8
       }
     ]
@@ -221,27 +221,27 @@ export const dialogs = [
         text: "步步高升!",
         textTranslation: "Rise higher step by step!",
         result: "Grandma: \"Rise go where? Heaven is it? 💀\"",
-        points: 0,
+        money: 0,
         nextPage: 9,
       },
       {
         "text": "寿比南山!",
         "textTranslation": "Longevity as high as the Southern Mountain!",
         "result": "Grandma: \"So pandai ah you. Lai take this extra thick angpao 🧧\"",
-        "points": 2,
+        "money": 200,
         "nextPage": 9
       },
       {
         "text": "笑口常开!",
         "textTranslation": "Smile always!",
         "result": "Grandma: \"I no teeth how to smile? You make fun of me ah? 😬\"",
-        "points": 1,
+        "money": 50,
         "nextPage": 9
       },
       {
         "text": "Nothing",
         "result": "Grandma: \"You forgot who I am is it? Why so quiet? 😢\"",
-        "points": 0,
+        "money": 0,
         "nextPage": 9
       }
     ]

@@ -1,13 +1,14 @@
 <div class="loader-section" *ngIf="displayLoader" >
     <span class="loader"></span>
-    <p>Calculating your CNY greeting skills score...</p>
+    <p>Counting your angpao money...</p>
 </div>
 
 <div *ngIf="!displayLoader" class="score-section">
-    <h2 class="score-title">Your CNY Greeting Skills Score</h2>
-    <p class="score-text">You scored <span class="score-number">{{ scorePercentage }}%</span></p>
+    <h2 class="score-title">Your CNY Angpao Haul</h2>
+    <p class="score-text">You earned <span class="score-number">${{ totalMoney }}</span></p>
+    <p class="score-max">(You could have gotten ${{ maxMoney }} tho)</p>
     <p class="score-message">{{ message }}</p>
 
-    <button class="action-button" (click)="resetPage.emit()">Try again ↩️</button>
+    <button class="action-button" (click)="resetPage.emit()">I can do better ↩️</button>
 </div>
 

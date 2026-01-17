@@ -27,6 +27,12 @@
     font-size: 16px;
 }
 
+.score-max {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
 .action-button {
     background-color: rgb(110, 109, 109);
     border: 1px solid rgb(144, 144, 144);
@@ -101,70 +107,46 @@
 
 @keyframes percentage {
     0% {
-        content: "0%"
-    }
-
-    5% {
-        content: "5%"
+        content: "$0"
     }
 
     10% {
-        content: "10%"
+        content: "$120"
     }
 
     20% {
-        content: "20%"
+        content: "$240"
     }
 
     30% {
-        content: "30%"
+        content: "$360"
     }
 
     40% {
-        content: "40%"
+        content: "$480"
     }
 
     50% {
-        content: "50%"
+        content: "$600"
     }
 
     60% {
-        content: "60%"
+        content: "$720"
     }
 
     70% {
-        content: "70%"
+        content: "$840"
     }
 
     80% {
-        content: "80%"
+        content: "$960"
     }
 
     90% {
-        content: "90%"
-    }
-
-    95% {
-        content: "95%"
-    }
-
-    96% {
-        content: "96%"
-    }
-
-    97% {
-        content: "97%"
-    }
-
-    98% {
-        content: "98%"
-    }
-
-    99% {
-        content: "99%"
+        content: "$1080"
     }
 
     100% {
-        content: "100%"
+        content: "$1200"
     }
 }
