@@ -28,11 +28,11 @@ export const dialogs = [
     text: "I'm here to train your CNY greeting skills to impress your aunty uncle for ANGPAOMAXXING🧧🧧🧧",
     options: [
       {
-        text: "I am ready! 😎",
+        text: "I am ready 😎",
         nextPage: 3
       },
       {
-        text: "But I don't know chinese leh 🥺",
+        text: "But I don't know chinese 🥺",
         nextPage: 2
       }
     ]
@@ -74,7 +74,7 @@ export const dialogs = [
       },
       {
         text: "Nothing",
-        result: "Aunty: \"Haiyo so rude, never wish me one. No angpao for you 😡\"",
+        result: "Aunty: \"Haiyo so rude. No angpao for you 😡\"",
         money: 0,
         nextPage: 4,
       },
@@ -126,14 +126,14 @@ export const dialogs = [
       },
       {
         text: "财源滚滚!",
-        textTranslation: "Rolling in wealth!",
-        result: "Uncle: \"Cheh you only see me for my money is it 🙄😤\"",
+        textTranslation: "Roll in wealth!",
+        result: "Uncle: \"No need wish this, I already have a lot of money 🙄😤\"",
         money: 0,
         nextPage: 6,
       },
       {
         text: "身体健康!",
-        textTranslation: "Good health!",
+        textTranslation: "Have good health!",
         result: "Uncle: \"🥹 Wah... you are the only one who cares about my health. Lai uncle give you BIG angpao 🧧\"",
         money: 200,
         nextPage: 6,
@@ -185,7 +185,7 @@ export const dialogs = [
     "options": [
       {
         "text": "学业进步!",
-        "textTranslation": "Academic progress!",
+        "textTranslation": "Wishing you academic progression!",
         "result": "Cousin: \"Bro I already Dean's list every semester. How much more progress you want 🙄\"",
         "money": 0,
         "nextPage": 8
@@ -206,8 +206,8 @@ export const dialogs = [
       },
       {
         "text": "恭喜发财!",
-        "textTranslation": "Get Rich!",
-        "result": "Cousin: \"So basic bro. That's for ordinary people 🥱\"",
+        "textTranslation": "Get rich!",
+        "result": "Cousin: \"Kinda basic bro 🥱\"",
         "money": 0,
         "nextPage": 8
       }
@@ -240,17 +240,10 @@ export const dialogs = [
       },
       {
         "text": "Nothing",
-        "result": "Grandma: \"没大没小 (so disrespectful) No angpao for you 😡\"",
+        "result": "Grandma: \"没大没小 (so disrespectful) 😡 No angpao for you\"",
         "money": 0,
         "nextPage": 9
       }
     ]
   }
 ];
-
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/
