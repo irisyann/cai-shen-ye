@@ -57,7 +57,7 @@ footer {
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     margin-bottom: 20px;
-    margin-top: 20vh;
+    margin-top: 10vh;
 }
 
 .result-section {
@@ -90,9 +90,106 @@ footer {
     }
 }
 
+/* Envelope (angpao) at top right */
+.envelope-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.envelope {
+    position: relative;
+    width: 70px;
+    height: 50px;
+}
+
+.envelope-body {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 70px;
+    height: 42px;
+    background: linear-gradient(180deg, #dc3545 0%, #a71d2a 100%);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(167, 29, 42, 0.4);
+}
+
+.envelope-amount {
+    position: relative;
+    z-index: 1;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffd700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Shake animation for $0 */
+.envelope-container.shake {
+    animation: envelopeShake 0.6s ease-in-out;
+}
+
+@keyframes envelopeShake {
+    0%, 100% {
+        transform: translateX(0) rotate(0deg);
+    }
+    20% {
+        transform: translateX(-5px) rotate(-8deg);
+    }
+    40% {
+        transform: translateX(5px) rotate(8deg);
+    }
+    60% {
+        transform: translateX(-4px) rotate(-6deg);
+    }
+    80% {
+        transform: translateX(4px) rotate(6deg);
+    }
+}
+
+/* Receive animation */
+.envelope-container.receive {
+    animation: envelopeReceive 0.5s ease-out;
+}
+
+@keyframes envelopeReceive {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 @media screen and (max-width: 768px) {
     .gow-img {
         max-height: 180px;
         max-width: 180px;
+    }
+
+    .envelope-container {
+        top: 12px;
+        right: 10px;
+    }
+
+    .envelope {
+        width: 60px;
+        height: 44px;
+    }
+
+    .envelope-body {
+        top: 12px;
+        width: 60px;
+        height: 37px;
+    }
+
+    .envelope-amount {
+        font-size: 12px;
     }
 }

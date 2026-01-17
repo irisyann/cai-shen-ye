@@ -9,14 +9,92 @@
     max-width: 500px;
 }
 
-.money-earned, .money-total {
-    font-size: 18px;
-    color: #000;
-    margin: 10px 0;
-    text-align: center;
+/* Angpao container */
+.angpao-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    min-height: 80px;
 }
 
-.money-amount {
+/* Bills flying to top-right envelope */
+.bills-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.bill {
+    position: absolute;
+    font-size: 32px;
+    opacity: 0;
+    animation: flyToEnvelope 0.8s ease-in forwards;
+}
+
+.bill-1 {
+    animation-delay: 0s;
+}
+
+.bill-2 {
+    animation-delay: 0.1s;
+}
+
+.bill-3 {
+    animation-delay: 0.2s;
+}
+
+.bill-4 {
+    animation-delay: 0.3s;
+}
+
+.bill-5 {
+    animation-delay: 0.4s;
+}
+
+@keyframes flyToEnvelope {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0) scale(1) rotate(0deg);
+    }
+    60% {
+        opacity: 1;
+        transform: translate(calc(50vw - 70px), calc(-50vh + 60px)) scale(0.6) rotate(180deg);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(calc(50vw - 55px), calc(-50vh + 35px)) scale(0.2) rotate(360deg);
+    }
+}
+
+/* Money earned text */
+.money-earned {
+    font-size: 28px;
     font-weight: bold;
-    color: #d4af37;
+    color: #2ecc71;
+    margin-top: 10px;
+    animation: popIn 0.4s ease-out;
+}
+
+.money-earned.no-money {
+    color: #e74c3c;
+}
+
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    70% {
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }

@@ -54,7 +54,7 @@ export const dialogs = [
       {
         text: "新年快乐!",
         textTranslation: "Happy New Year!",
-        result: "Aunty: \"Haiya this greeting too generic, aunty hear so many times already sien 😴\"",
+        result: "Aunty: \"Haiya this greeting again ah, aunty hear so many times already sien 😴\"",
         money: 50,
         nextPage: 4,
       },
@@ -68,7 +68,7 @@ export const dialogs = [
       {
         text: "容光焕发!",
         textTranslation: "Glow with radiance!",
-        result: "Aunty: \"🥰 Wah you very sweet hor, come I give you extra angpao 🧧\"",
+        result: "Aunty: \"🥰 Wah you very clever hor, aunty give you extra angpao 🧧\"",
         money: 200,
         nextPage: 4,
       },
@@ -120,7 +120,7 @@ export const dialogs = [
       {
         text: "生意兴隆!",
         textTranslation: "Prosper in business!",
-        result: "Uncle: \"Haiya hear this so many times already, why you so boring one 🥱\"",
+        result: "Uncle: *shakes your hand nonchalantly and goes back to playing mahjong*",
         money: 50,
         nextPage: 6,
       },
@@ -148,12 +148,12 @@ export const dialogs = [
   },
   {
     "page": 6,
-    "text": "🚨 EMERGENCY! The Nosy Aunty™️ corners you. She asks: 'Dating already or not? When getting married?' How do you distract her?!?!",
+    "text": "🚨 BEWARE! The Nosy Aunty™️ corners you. She asks: \"Dating already or not? When getting married?\" How do you distract her?!?!",
     "options": [
       {
         "text": "心想事成!",
         "textTranslation": "May all your wishes come true!",
-        "result": "Aunty: \"My wish is for you to get married leh. So you agreeing is it? 😏\"",
+        "result": "Aunty: \"My wish is for you to get married leh. So when is that happening? 😏\"",
         "money": 50,
         "nextPage": 7
       },
@@ -167,7 +167,7 @@ export const dialogs = [
       {
         "text": "青春永驻!",
         "textTranslation": "Stay young forever!",
-        "result": "Aunty: \"Aiyo, where got young... but I did use new facial cream today. Hehe you so sweet one! 🥰 (She forgets to ask about your partner)\"",
+        "result": "Aunty: \"Aiyo, where got young... but I got use this new facial cream today. Hehe you so sweet one 🥰 (She forgets to ask about your partner)\"",
         "money": 200,
         "nextPage": 7
       },
@@ -193,14 +193,14 @@ export const dialogs = [
       {
         "text": "步步高升!",
         "textTranslation": "Rise step by step!",
-        "result": "Cousin: \"Thanks bro. Maybe one day you can be on my level also 😏\"",
+        "result": "Cousin: \"Thanks bro. Maybe one day you can rise to my level also 😏\"",
         "money": 50,
         "nextPage": 8
       },
       {
         "text": "前程似锦!",
         "textTranslation": "Wishing you a bright future!",
-        "result": "Cousin: \"Wah I didn't know your Chinese standard so high one. Finally, someone on my intellectual level. 🍷\"",
+        "result": "Cousin: \"Wah I didn't know your Chinese standard so high one. Finally someone on my intellectual level. 🍷\"",
         "money": 200,
         "nextPage": 8
       },
@@ -220,7 +220,7 @@ export const dialogs = [
       {
         text: "步步高升!",
         textTranslation: "Rise higher step by step!",
-        result: "Grandma: \"Rise go where? Heaven is it? 💀\"",
+        result: "Grandma: \"Rise go where? You want me go heaven faster ah? 💀\"",
         money: 0,
         nextPage: 9,
       },
@@ -234,13 +234,13 @@ export const dialogs = [
       {
         "text": "笑口常开!",
         "textTranslation": "Smile always!",
-        "result": "Grandma: \"I no teeth how to smile? You make fun of me ah? 😬\"",
+        "result": "Grandma: \"Hello I no teeth how to smile?\"",
         "money": 50,
         "nextPage": 9
       },
       {
         "text": "Nothing",
-        "result": "Grandma: \"You forgot who I am is it? Why so quiet? 😢\"",
+        "result": "Grandma: \"没大没小 (so disrespectful) No angpao for you 😡\"",
         "money": 0,
         "nextPage": 9
       }

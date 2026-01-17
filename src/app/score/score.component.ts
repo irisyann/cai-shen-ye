@@ -27,12 +27,20 @@ export class ScoreComponent implements OnInit{
     }, 0);
 
     // Messages based on performance
-    if (this.maxMoney > 0 && this.totalMoney >= this.maxMoney) {
-      this.message = `PEAK 👏 BEHAVIOUR👏 Get that bread, 99.999% Chinese DNA verified.`;
-    } else if (this.totalMoney === 0) {
-      this.message = `TERRIBLE. ABSOLUTE SKILL ISSUE. Please don't leave your house this CNY.`;
+    const percentage = this.maxMoney > 0 ? (this.totalMoney / this.maxMoney) * 100 : 0;
+
+    if (percentage >= 80) {
+      this.message = `PEAK 👏 BEHAVIOUR 👏 99.999% Chinese DNA verified 🏅`;
+    } else if (percentage >= 60) {
+      this.message = `IMPRESSIVE! Your aunties and uncles wish their children are more like you 🫵🏽`;
+    } else if (percentage >= 40) {
+      this.message = `Not bad 👍 You can survive CNY with your dignity intact.`;
+    } else if (percentage >= 30) {
+      this.message = `Ok la 😐 Your relatives are not impressed but at least you got some $$$ out of it.`;
+    } else if (percentage >= 10) {
+      this.message = `ABSOLUTE SKILL ISSUE👎🏽`;
     } else {
-      this.message = `👍 Your skills are still kinda mid. Try again???`;
+      this.message = `Please don't leave your house this CNY ❌`;
     }
   }
 }

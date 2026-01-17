@@ -1,3 +1,15 @@
 <p class="result-text">{{ result }}</p>
-<p class="money-earned">You earned: <span class="money-amount">${{ roundMoney }}</span></p>
-<p class="money-total">Running total: <span class="money-amount">${{ totalMoney }}</span></p>
+
+<div class="angpao-container">
+    <div class="bills-container" *ngIf="roundMoney > 0">
+        <span class="bill bill-1">💵</span>
+        <span class="bill bill-2">💵</span>
+        <span class="bill bill-3">💵</span>
+        <span class="bill bill-4">💸</span>
+        <span class="bill bill-5">💸</span>
+    </div>
+    <p class="money-earned" [class.no-money]="roundMoney === 0">
+        <span *ngIf="roundMoney > 0">+${{ roundMoney }}</span>
+        <span *ngIf="roundMoney === 0">$0</span>
+    </p>
+</div>
