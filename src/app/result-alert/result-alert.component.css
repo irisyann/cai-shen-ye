@@ -1,12 +1,15 @@
 .result-text {
-    font-size: 20px;
-    color: #000;
+    font-size: 18px;
+    color: #fff5f5;
     margin: 20px 0;
     text-align: center;
-    background-color: color-mix(in srgb, yellow 20%, transparent);
-    padding: 10px 20px;
-    border-radius: 5px;
+    background: linear-gradient(135deg, #2a1010 0%, #3a1515 100%);
+    padding: 16px 24px;
+    border-radius: 12px;
     max-width: 500px;
+    border: 1px solid #5a2020;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    line-height: 1.5;
 }
 
 /* Angpao container */
@@ -35,6 +38,7 @@
     font-size: 32px;
     opacity: 0;
     animation: flyToEnvelope 0.8s ease-in forwards;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
 
 .bill-1 {
@@ -74,15 +78,17 @@
 
 /* Money earned text */
 .money-earned {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: bold;
-    color: #2ecc71;
+    color: #4ade80;
     margin-top: 10px;
     animation: popIn 0.4s ease-out;
+    text-shadow: 0 0 20px rgba(74, 222, 128, 0.4);
 }
 
 .money-earned.no-money {
-    color: #e74c3c;
+    color: #f87171;
+    text-shadow: 0 0 20px rgba(248, 113, 113, 0.4);
 }
 
 @keyframes popIn {

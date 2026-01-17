@@ -1,14 +1,30 @@
 :host {
-    --bright-blue: oklch(51.01% 0.274 263.83);
-    --electric-violet: oklch(53.18% 0.28 296.97);
-    --french-violet: oklch(47.66% 0.246 305.88);
-    --vivid-pink: oklch(69.02% 0.277 332.77);
-    --hot-red: oklch(61.42% 0.238 15.34);
-    --orange-red: oklch(63.32% 0.24 31.68);
+    /* Prosperous CNY Theme Colors */
+    --bg-primary: #1a0a0a;
+    --bg-secondary: #2a1010;
+    --bg-card: #3a1515;
+    --bg-card-hover: #4a1a1a;
 
-    --gray-900: oklch(19.37% 0.006 300.98);
-    --gray-700: oklch(36.98% 0.014 302.71);
-    --gray-400: oklch(70.9% 0.015 304.04);
+    --red-dark: #4a0a0a;
+    --red-primary: #8b0000;
+    --red-light: #b22222;
+    --red-accent: #dc3545;
+
+    --gold-dark: #b8860b;
+    --gold-primary: #daa520;
+    --gold-light: #ffd700;
+
+    --text-primary: #fff5f5;
+    --text-secondary: #e0c0c0;
+    --text-muted: #a08080;
+
+    /* Legacy color variables */
+    --bright-blue: #4a9eff;
+    --electric-violet: #8b5cf6;
+    --french-violet: #7c3aed;
+    --vivid-pink: #ec4899;
+    --hot-red: #ef4444;
+    --orange-red: #f97316;
 
     font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
         Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
@@ -26,12 +42,12 @@
     padding: 1rem;
     box-sizing: inherit;
     position: relative;
-    background-color: rgb(246, 246, 246);
+    background: radial-gradient(ellipse at top, #3a1515 0%, #2a0f0f 40%, #1a0a0a 100%);
 }
 
 p {
     margin: 0;
-    color: var(--gray-700);
+    color: var(--text-secondary);
 }
 
 main {
@@ -44,9 +60,22 @@ main {
     position: relative;
 }
 
-footer {    
+footer {
     position: absolute;
     bottom: 0;
+}
+
+footer a {
+    color: var(--text-muted);
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--gold-primary);
+}
+
+footer span {
+    color: var(--text-muted) !important;
 }
 
 .gow-img {
@@ -58,6 +87,12 @@ footer {
     animation-timing-function: ease-in-out;
     margin-bottom: 20px;
     margin-top: 10vh;
+    border-radius: 50%;
+    border: 3px solid #8b0000;
+    box-shadow:
+        0 0 25px rgba(255, 215, 0, 0.3),
+        0 0 50px rgba(139, 0, 0, 0.3);
+    object-fit: cover;
 }
 
 .result-section {
@@ -66,25 +101,49 @@ footer {
     align-items: center;
 }
 
+/* Action Button - Premium Dark Style */
 .action-button {
-    border: 1px solid rgb(144, 144, 144);
-    color: var(--gray-400);
-    padding: 10px 20px;
+    background: linear-gradient(135deg, var(--red-primary) 0%, var(--red-dark) 100%);
+    border: 1px solid var(--red-light);
+    color: var(--gold-light);
+    padding: 14px 32px;
     border-radius: 50px;
     font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
     margin-top: 20px;
+    box-shadow:
+        0 4px 15px rgba(139, 0, 0, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.5px;
+}
+
+.action-button:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 8px 25px rgba(139, 0, 0, 0.5),
+        0 0 20px rgba(255, 215, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    background: linear-gradient(135deg, var(--red-light) 0%, var(--red-primary) 100%);
+    border-color: var(--gold-dark);
+}
+
+.action-button:active {
+    transform: translateY(-1px);
+    box-shadow:
+        0 2px 10px rgba(139, 0, 0, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 @keyframes floating {
     0% {
         transform: translate(0, 0px);
     }
-
     50% {
         transform: translate(0, 10px);
     }
-
     100% {
         transform: translate(0, -0px);
     }
@@ -110,12 +169,15 @@ footer {
     left: 0;
     width: 70px;
     height: 42px;
-    background: linear-gradient(180deg, #dc3545 0%, #a71d2a 100%);
-    border-radius: 4px;
+    background: linear-gradient(180deg, var(--red-accent) 0%, var(--red-primary) 100%);
+    border-radius: 6px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 12px rgba(167, 29, 42, 0.4);
+    box-shadow:
+        0 4px 15px rgba(139, 0, 0, 0.5),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--red-light);
 }
 
 .envelope-amount {
@@ -123,8 +185,8 @@ footer {
     z-index: 1;
     font-size: 14px;
     font-weight: bold;
-    color: #ffd700;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    color: var(--gold-light);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 /* Shake animation for $0 */
@@ -169,8 +231,8 @@ footer {
 
 @media screen and (max-width: 768px) {
     .gow-img {
-        max-height: 180px;
-        max-width: 180px;
+        max-height: 160px;
+        max-width: 160px;
     }
 
     .envelope-container {
