@@ -39,7 +39,7 @@ jobs:
           fi
 
       - name: Copy build files to docs
-        run: cp -r dist/* docs/
+        run: cp -r dist/cny-greetings-game/browser/* docs/
 
       - name: Configure Git
         run: |
