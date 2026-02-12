@@ -24,7 +24,6 @@ export class DialogComponent {
       option_text: option.text,
     };
 
-    console.log('GA4 Event:', 'dialog_option_click', eventData);
     this.gaService.gtag('event', 'dialog_option_click', eventData);
 
     // Emit the original event
