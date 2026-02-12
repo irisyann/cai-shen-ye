@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { DialogComponent } from './dialog/dialog.component';
@@ -11,8 +10,7 @@ import { ScoreComponent } from './score/score.component';
 @NgModule({
   imports: [
     BrowserModule,
-    ReactiveFormsModule,
-    RouterModule,
+    RouterModule
   ],
   declarations: [
     AppComponent,
