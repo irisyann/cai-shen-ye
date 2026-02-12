@@ -1,4 +1,5 @@
 import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
+import { GoogleAnalyticsService } from 'ngx-google-analytics';
 import { dialogs } from '../dialogs';
 
 @Component({
@@ -9,6 +10,8 @@ import { dialogs } from '../dialogs';
 export class ScoreComponent implements OnInit{
   @Input() totalMoney: number = 0;
   @Output() resetPage = new EventEmitter();
+
+  constructor(private gaService: GoogleAnalyticsService) {}
 
   message = '';
   maxMoney = 0;
@@ -46,5 +49,14 @@ export class ScoreComponent implements OnInit{
     } else {
       this.message = `Please don't leave your house this CNY ❌`;
     }
+  }
+
+  onReplayClick(): void {
+    this.gaService.gtag('event', 'replay_click', {
+      total_money: this.totalMoney,
+      max_money: this.maxMoney,
+      is_perfect_score: this.isPerfectScore
+    });
+    this.resetPage.emit();
   }
 }

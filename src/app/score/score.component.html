@@ -10,7 +10,7 @@
     <p class="score-max" *ngIf="!isPerfectScore">(You could have gotten ${{ maxMoney }} tho)</p>
     <p class="score-message">{{ message }}</p>
 
-    <button class="action-button" (click)="resetPage.emit()">
+    <button class="action-button" (click)="onReplayClick()">
         {{ isPerfectScore ? "You're too OP, replay?" : "I can do better ↩️" }}
     </button>
 </div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GoogleAnalyticsService } from 'ngx-google-analytics';
 
 import { DialogOption, dialogs } from './dialogs';
 
@@ -8,6 +9,7 @@ import { DialogOption, dialogs } from './dialogs';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  constructor(private gaService: GoogleAnalyticsService) {}
   FINAL_PAGE = 9;
   dialogs = [...dialogs];
   showTextTranslation = false;
@@ -55,5 +57,19 @@ export class AppComponent {
     this.currentDialog = this.dialogs.find(dialog => dialog.page === this.page);
     this.resultPage = false;
     this.scorePage = false;
+  }
+
+  trackGitHubClick(): void {
+    this.gaService.gtag('event', 'link_click', {
+      link_type: 'github',
+      link_url: 'https://github.com/irisyann/cai-shen-ye'
+    });
+  }
+
+  trackKofiClick(): void {
+    this.gaService.gtag('event', 'link_click', {
+      link_type: 'kofi',
+      link_url: 'https://ko-fi.com/irisyann'
+    });
   }
 }
