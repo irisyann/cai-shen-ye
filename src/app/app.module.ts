@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+import { NgxGoogleAnalyticsModule, NgxGoogleAnalyticsRouterModule } from 'ngx-google-analytics';
 
 import { AppComponent } from './app.component';
 import { DialogComponent } from './dialog/dialog.component';
@@ -10,7 +11,9 @@ import { ScoreComponent } from './score/score.component';
 @NgModule({
   imports: [
     BrowserModule,
-    RouterModule
+    RouterModule,
+    NgxGoogleAnalyticsModule.forRoot('G-J2N4T5VWZR'),
+    NgxGoogleAnalyticsRouterModule,
   ],
   declarations: [
     AppComponent,

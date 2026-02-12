@@ -12,7 +12,7 @@
 <video *ngIf="dialog?.video" [src]="dialog?.video" class="dialog-video" autoplay playsinline loop controls></video>
 
 <div *ngIf="dialog?.options" class="options">
-    <button class="option-button" *ngFor="let option of dialog?.options" (click)="optionSelect.emit(option)">
+    <button class="option-button" *ngFor="let option of dialog?.options; let i = index" (click)="onOptionClick(option, i)">
         <span class="option-text">
             {{ option?.text }}
         </span>
